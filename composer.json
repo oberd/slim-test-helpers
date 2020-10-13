@@ -1,47 +1,49 @@
 {
-    "name": "there4/slim-test-helpers",
-    "description": "Integration testing helpers for the Slim Framework",
-    "keywords": ["slim"],
-    "homepage": "https://github.com/there4/slim-test-helpers",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Craig Davis",
-            "email": "craig@there4development.com"
-        },
-        {
-            "name": "Guillermo A. Fisher",
-            "homepage": "http://guillermoandraefisher.com"
-        }
-    ],
-    "support": {
-        "issues": "https://github.com/there4/slim-test-helpers/issues",
-        "source": "https://github.com/there4/slim-test-helpers"
+  "name": "there4/slim-test-helpers",
+  "description": "Integration testing helpers for the Slim Framework",
+  "keywords": [
+    "slim"
+  ],
+  "homepage": "https://github.com/there4/slim-test-helpers",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Craig Davis",
+      "email": "craig@there4development.com"
     },
-    "require": {
-        "slim/slim": "2.6.*",
-        "phpunit/phpunit": "^4.8|5.*",
-        "phpunit/dbunit": "1.*|2.*",
-        "illuminate/database": ">=4.0"
-    },
-    "require-dev": {
-        "squizlabs/php_codesniffer": "2.*",
-        "codeclimate/php-test-reporter": "^0.3"
-    },
-    "autoload": {
-        "psr-0": {
-            "There4": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-0": {
-            "There4Test": "tests/"
-        }
-    },
-    "scripts": {
-        "test": "vendor/bin/phpunit --verbose --coverage-text",
-        "sniff": "vendor/bin/phpcs --standard=PSR2 --extensions=php src tests",
-        "fix": "vendor/bin/phpcbf --standard=PSR2 --extensions=php controllers models routes src tests"
+    {
+      "name": "Guillermo A. Fisher",
+      "homepage": "http://guillermoandraefisher.com"
     }
+  ],
+  "support": {
+    "issues": "https://github.com/there4/slim-test-helpers/issues",
+    "source": "https://github.com/there4/slim-test-helpers"
+  },
+  "require": {
+    "slim/slim": "2.6.*",
+    "phpunit/phpunit": "^4.8|5.*|6.*",
+    "phpunit/dbunit": "1.*|2.*|3.*",
+    "illuminate/database": ">=4.0"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "2.*",
+    "codeclimate/php-test-reporter": "^0.3"
+  },
+  "autoload": {
+    "psr-0": {
+      "There4": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-0": {
+      "There4Test": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit --verbose --coverage-text",
+    "sniff": "vendor/bin/phpcs --standard=PSR2 --extensions=php src tests",
+    "fix": "vendor/bin/phpcbf --standard=PSR2 --extensions=php controllers models routes src tests"
+  }
 }
